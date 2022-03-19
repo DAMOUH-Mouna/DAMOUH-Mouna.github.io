@@ -8,6 +8,13 @@ main{
 
 img{
     width: 500px;
+    transition:  0.7s ;
+}
+img:hover{
+    transform: scale(130%) ;
+    border-radius: 10px;
+    transition:  1s ;
+   
 }
 .cont {
     width: 1010px;
