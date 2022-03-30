@@ -1,0 +1,101 @@
+body{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0%;
+}
+
+.contenaire{
+    width: 80%;
+    margin: 35px auto;
+    border: solid 1px black;
+    border-radius: 20px;
+    box-shadow: 1px;
+    position: relative;
+    box-shadow: 3px 4px 9px 5px rgba(0,0,0,0.63);
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form{
+    padding: 20px;
+   
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.Bottons-socio{
+    width: 220px;
+    padding: 20px 0;
+    
+}
+.Botton-social{
+    
+    width: 220px;
+    margin: 5px 0;
+}
+.icon-social{
+    color: white;
+    margin-right: 5px;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 200px;
+    margin-bottom :20px; ;
+}
+i{
+    cursor: pointer;
+}
+.parentMotPass{
+    margin-bottom: 0% !important; 
+    position: relative;
+}
+
+.fa-eye-slash{
+    position: absolute;
+    transform: translate(0,-50%);
+    top:50%;
+    right: 10px;
+}
+.fa-eye{
+    position: absolute;
+    transform: translate(0,-50%);
+    top:50%;
+    right: 10px;
+}
+
+.justify-content-between {
+    margin-top: 10px;
+}
+.btn-dark{
+    margin-right: 15px;
+    width: 150px;
+}
+.addUser{
+    position: absolute;
+    width: 40px;
+    top: -20px;
+    left: 50px;
+}
+.form-check{
+  
+    margin-bottom: 10px;
+}
+.img-fluid{
+    border-radius: 0 20px 20px 0 ;
+}
+@media screen and (max-width:500px){
+    .btn-dark {
+        margin: auto !important
+    }
+}
+
+@media screen and (max-width:993px) {
+    .img-fluid {
+        border-radius: 0 0 20px 20px  ;
+    }
+}

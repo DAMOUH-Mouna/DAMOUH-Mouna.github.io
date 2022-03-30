@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--mon fichier css -->
+    <link href="style.css" rel="stylesheet"></link>
+    <!-- bootstrap -->
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet"> </link>
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/7fd47a90e1.js" crossorigin="anonymous"></script>
+    <!--mon fichier javascript -->
+    <script src="javascript.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://www.futurdigital.fr/themes/themefd12021/favicon.ico">
+    <title>Formulaire d'inscription Futur Digital</title>
+</head>
+<body>
+    <!-- Création du contenaire du formulaire et de l'image -->
+    <div class="contenaire">
+    <div class="row ">
+        <!-- Inscription -->
+        <div class="inscription col-lg-7 ">
+            <!-- Création du formulaire -->
+            <form>
+                    <!--  -->
+                    <!--  -->
+                    <!-- L'icone d'inscription en haut du contenaire -->
+                    <img class="addUser" src="images/add-user1.png">
+                    <!-- Formulaire -->
+                    <h4>Inscrivez-vous</h4>
+                    <div class="form-group">
+                        <input type="text" placeholder="Nom complet" class="form-control" id="nom">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Adresse email" class="form-control" id="mail">
+                    </div>
+                    <!-- input du mot de passe à l'aide de javascript-->
+                    <!-- Je met le parent de l'input contenat le mot de passe en position relative pour bien positionner l'oeil -->
+                    <div class="form-group parentMotPass">
+                        <input type="password" id="password" placeholder="Mot de passe" class="form-control" >
+            
+                            <i class=" fas fa-eye-slash"  onclick="showPass(this,'password');"></i>
+                        
+                    </div>
+                    <small id="emailHelp" class="form-text text-muted">Le mot de passe doit contenir minimum 10 caractères dont un caractère special.</small>
+                   
+                    <!-- Je met le parent de l'input contenat le mot de passe en position relative pour bien positionner l'oeil -->
+                    <div class="form-group parentMotPass mt-3">
+                        <input type="password" id="passwordConfirm" placeholder="Confirmer le mot de passe" class="form-control">
+                            <i class=" fas fa-eye-slash" onclick="showPass(this,'passwordConfirm');" ></i>
+                    </div>
+                    <!-- se souvenir de moi et le botton d'inscription -->
+                    <div class="row justify-content-between ">
+                        <div class="form-check ">
+                            <input type="checkbox" id="toCheck">
+                            <label class="form-check-label" for="toCheck">Se souvenir de moi</label>
+                            
+                        </div>
+                      <!-- botton d'inscription -->
+                      <!-- si on clique on contrôle le mot de passe -->
+                        <input onclick="PasswordCheck()" class="btn btn-dark"  value="S'inscrire" type="submit"></input>
+                        
+                    </div>
+                
+            </form>
+
+            <!-- centrer les bottons socios -->
+            <div class="mx-auto Bottons-socio" >
+                <!-- Inscription à travers Facebook -->
+                <button class="btn btn-primary Botton-social" ><i  class="fab fa-facebook-f icon-social" ></i>S'inscrire avec Facebook</button>    
+                <!-- Inscription à travers Google -->
+                <button class="btn btn-info Botton-social" ><i class="fa-brands fa-google icon-social" ></i>S'inscrire avec Google</button> 
+            </div>  
+        </div>
+        <!-- L'image -->
+        <div class="image-inscription col-lg-5 ">
+            <img src="images/futur Digital.png" class=" img-fluid " alt="">
+        </div>
+    </div>
+
+ </div>
+<!-- Fin du contenaire -->
+
+<!-- logo de Futur digital -->
+<div class="logo">
+        <img src="images/futur+digital-logo-cba438a25329cdfa85ce3468b69b00644c4b5719fde1566c0c7e90be5e86109f.jpg" alt="">
+</div>
+
+</body>
+</html>
